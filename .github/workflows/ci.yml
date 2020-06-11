@@ -29,6 +29,8 @@ jobs:
 
   tier_2:
     name: Tier 2
+    # Allowing to fail for a while, because building OpenSSL is a huge pain
+    continue-on-error: true
     runs-on: ubuntu-latest
     strategy:
       matrix:
